@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Shop</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4f46e5",
+              secondary: "#f43f5e",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <header class="sticky top-0 z-50 bg-white shadow-xl">
+      <div class="container mx-auto flex justify-between p-4 items-center">
+        <a href="#">
+          <div
+            class="flex items-center justify-start font-medium hover:font-bold"
+          >
+            <span class="text-primary">Dream</span>
+            <span class="text-secondary">Shop</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex gap-3">
+          <a href="#home" class="hover:text-primary text-sm font-medium">Home</a>
+          <a href="#popular-product" class="hover:text-primary text-sm font-medium">Popular</a>
+          <a href="#categories" class="hover:text-primary text-sm font-medium"
+            >Categories</a
+          >
+          <a href="#testimonial" class="hover:text-primary text-sm font-medium"
+            >Testimonials</a
+          >
+          <a href="#featured" class="hover:text-primary text-sm font-medium"
+            >Products</a
+          >
+        </nav>
+
+        <div class="text-primary">
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <section id="home" class="py-16 bg-gradient-to-r from-primary via-purple to-secondary ">
+        <div class="container mx-auto px-4">
+          <div
+            class="flex flex-col md:flex-row items-center md:justify-between gap-4 "
+          >
+            <div class="md:w-1/2 shadow-xl ">
+              <h1 class="text-3xl font-bold mb-4 md:text-5xl lg:text-7xl">
+                New Arrivals Are Here ....
+              </h1>
+
+              <p class="text-xl mb-2 md:text-2xl lg:text-3xl">
+                Get UPTO <span class="font-semibold">25% Discount</span> on your
+                first product
+              </p>
+
+              <div class="flex flex-col md:flex-row gap-2 py-4 md:w-1/2">
+                <a
+                  href="#"
+                  class="text-primary bg-white rounded text-center md:items-center border-2 w-1/2 hover:bg-primary hover:text-white transation"
+                  >Shop Now</a
+                >
+
+                <a
+                  href="#"
+                  class="text-white bg-primary rounded w-1/2 border-2 border-primary text-center"
+                  >View Catagories</a
+                >
+              </div>
+            </div>
+
+            <div class="mx-auto w-1/2  px-4 shadow-xl rounded-xl float-right  h-auto justify-center ">
+              <img src="./asset/images/ferrari.jpg" alt="ford" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- why choose us -->
+        <section class="py-16 mx-auto px-4">
+          <div class="container mx-auto px-4">
+            
+            <div class="mb-10">
+              <h2 class="font-bold text-center text-xl md:text-3xl lg:text-5xl mb-4">
+              Why Choose Us ???
+            </h2>
+
+            <p class=" text-gray-600 font-semibold text-center lg:text-xl">We provide the best shopping experience and condinent environment for our costumers.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+              <div class="py-6 px-7 bg-slate-100 rounded-xl shadow-md">
+              <div class="text-2xl text-primary mb-3">
+                <i class="fa fa-check"></i>
+              </div>
+
+              <h3 class="font-semibold text-xl mb-2">Quality products</h3>
+              <p class="text-gray-600">
+                We provide only best quality products from the trusted suppliers.
+              </p>
+            </div>
+
+            <div class="py-6 px-7 bg-slate-100 rounded-xl shadow-md">
+              <div class="text-2xl text-primary mb-3">
+                <i class="fa fa-truck"></i>
+              </div>
+
+              <h3 class="font-semibold text-xl mb-2">Fast Delivery</h3>
+              <p class="text-gray-600">
+                Get your product in your required time.
+              </p>
+            </div>
+
+            <div class="py-6 px-7 bg-slate-100 rounded-xl shadow-md">
+              <div class="text-2xl text-primary mb-3">
+                <i class="fa fa-refresh"></i>
+              </div>
+
+              <h3 class="font-semibold text-xl mb-2">Easy retun</h3>
+              <p class="text-gray-600">
+                No need to worry for changing, if your expectation doesn't match.
+              </p>
+            </div>
+
+            <div class="py-6 px-7 bg-slate-100 rounded-xl shadow-md">
+              <div class="text-2xl text-primary mb-3">
+                <i class="fa fa-credit-card"></i>
+              </div>
+
+              <h3 class="font-semibold text-xl mb-2">Secure payment</h3>
+              <p class="text-gray-600">
+                You can pay securly with any payment method.
+              </p>
+            </div>
+            </div>
+
+          </div>
+
+        
+      </section>
+
+      
+      
+      <!-- product section -->
+       <section id="featured" class="bg-slate-300 py-16 mx-auto px-4">
+        <div class="container mx-auto px-4">
+          <div>
+            <h2 class="font-bold text-3xl text-center mb-3 md:text-4xl lg:text-5xl">Featured products</h2>
+           <p class="font-semibold text-slate-600 text-center lg:text-xl mb-8">Check out the latest products which are available in the market.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4">
+            <div class="bg-white-600 rounded-lg shadow ">
+            <div class="relative">
+              <img src="./asset/images/products/ktm.jpg" alt="" class="rounded-t-lg w-full h-48 object-cover">
+
+              <span class="absolute top-2 left-2 bg-red-600 text-white rounded-full text-xs px-1 py-2">-25%</span>
+            </div>
+            
+
+            <div class="p-4 bg-white" >
+              <h3 class="font-semibold ">Duke 390</h3>
+              <div class="text-yellow-500 text-xs py-2" >
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                <span class="text-gray-400">(930)</span>
+                
+              </div>
+
+              <div class="flex justify-between ">
+                <div>
+                  <span class="text-primary font-bold mr-1 text-lg">$899.99</span>
+                 <span class="line-through text-gray-600 text-xs">$999.99</span>
+                </div>
+
+                <button class="mr-2">Add to cart<i class="fa fa-shopping-cart text-primary ml-2"></i></button>
+
+              
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="bg-white-600 rounded-lg shadow ">
+            <div class="relative">
+              <img src="./asset/images/products/ktm.jpg" alt="" class="rounded-t-lg w-full h-48 object-cover">
+
+              <span class="absolute top-2 left-2 bg-red-600 text-white rounded-full text-xs px-1 py-2">-25%</span>
+            </div>
+            
+
+            <div class="p-4 bg-white" >
+              <h3 class="font-semibold ">Duke 390</h3>
+              <div class="text-yellow-500 text-xs py-2" >
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                <span class="text-gray-400">(930)</span>
+                
+              </div>
+
+              <div class="flex justify-between ">
+                <div>
+                  <span class="text-primary font-bold mr-1 text-lg">$899.99</span>
+                 <span class="line-through text-gray-600 text-xs">$999.99</span>
+                </div>
+
+                <button class="mr-2">Add to cart<i class="fa fa-shopping-cart text-primary ml-2"></i></button>
+
+              
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="bg-white-600 rounded-lg shadow ">
+            <div class="relative">
+              <img src="./asset/images/products/ktm.jpg" alt="" class="rounded-t-lg w-full h-48 object-cover">
+
+              <span class="absolute top-2 left-2 bg-red-600 text-white rounded-full text-xs px-1 py-2">-25%</span>
+            </div>
+            
+
+            <div class="p-4 bg-white" >
+              <h3 class="font-semibold ">Duke 390</h3>
+              <div class="text-yellow-500 text-xs py-2" >
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                <span class="text-gray-400">(930)</span>
+                
+              </div>
+
+              <div class="flex justify-between ">
+                <div>
+                  <span class="text-primary font-bold mr-1 text-lg">$899.99</span>
+                 <span class="line-through text-gray-600 text-xs">$999.99</span>
+                </div>
+
+                <button class="mr-2">Add to cart<i class="fa fa-shopping-cart text-primary ml-2"></i></button>
+
+              
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="bg-white-600 rounded-lg shadow ">
+            <div class="relative">
+              <img src="./asset/images/products/ktm.jpg" alt="" class="rounded-t-lg w-full h-48 object-cover">
+
+              <span class="absolute top-2 left-2 bg-red-600 text-white rounded-full text-xs px-1 py-2">-25%</span>
+            </div>
+            
+
+            <div class="p-4 bg-white" >
+              <h3 class="font-semibold ">Duke 390</h3>
+              <div class="text-yellow-500 text-xs py-2" >
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                <span class="text-gray-400">(930)</span>
+                
+              </div>
+
+              <div class="flex justify-between ">
+                <div>
+                  <span class="text-primary font-bold mr-1 text-lg">$899.99</span>
+                 <span class="line-through text-gray-600 text-xs">$999.99</span>
+                </div>
+
+                <button class="mr-2">Add to cart<i class="fa fa-shopping-cart text-primary ml-2"></i></button>
+
+              
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="bg-white-600 rounded-lg shadow ">
+            <div class="relative">
+              <img src="./asset/images/products/ktm.jpg" alt="" class="rounded-t-lg w-full h-48 object-cover">
+
+              <span class="absolute top-2 left-2 bg-red-600 text-white rounded-full text-xs px-1 py-2">-25%</span>
+            </div>
+            
+
+            <div class="p-4 bg-white" >
+              <h3 class="font-semibold ">Duke 390</h3>
+              <div class="text-yellow-500 text-xs py-2" >
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                <span class="text-gray-400">(930)</span>
+                
+              </div>
+
+              <div class="flex justify-between ">
+                <div>
+                  <span class="text-primary font-bold mr-1 text-lg">$899.99</span>
+                 <span class="line-through text-gray-600 text-xs">$999.99</span>
+                </div>
+
+                <button class="mr-2">Add to cart<i class="fa fa-shopping-cart text-primary ml-2"></i></button>
+
+              
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="bg-white-600 rounded-lg shadow ">
+            <div class="relative">
+              <img src="./asset/images/products/ktm.jpg" alt="" class="rounded-t-lg w-full h-48 object-cover">
+
+              <span class="absolute top-2 left-2 bg-red-600 text-white rounded-full text-xs px-1 py-2">-25%</span>
+            </div>
+            
+
+            <div class="p-4 bg-white" >
+              <h3 class="font-semibold ">Duke 390</h3>
+              <div class="text-yellow-500 text-xs py-2" >
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                <span class="text-gray-400">(930)</span>
+                
+              </div>
+
+              <div class="flex justify-between ">
+                <div>
+                  <span class="text-primary font-bold mr-1 text-lg">$899.99</span>
+                 <span class="line-through text-gray-600 text-xs">$999.99</span>
+                </div>
+
+                <button class="mr-2">Add to cart<i class="fa fa-shopping-cart text-primary ml-2"></i></button>
+
+              
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="bg-white-600 rounded-lg shadow ">
+            <div class="relative">
+              <img src="./asset/images/products/ktm.jpg" alt="" class="rounded-t-lg w-full h-48 object-cover">
+
+              <span class="absolute top-2 left-2 bg-red-600 text-white rounded-full text-xs px-1 py-2">-25%</span>
+            </div>
+            
+
+            <div class="p-4 bg-white" >
+              <h3 class="font-semibold ">Duke 390</h3>
+              <div class="text-yellow-500 text-xs py-2" >
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                <span class="text-gray-400">(930)</span>
+                
+              </div>
+
+              <div class="flex justify-between ">
+                <div>
+                  <span class="text-primary font-bold mr-1 text-lg">$899.99</span>
+                 <span class="line-through text-gray-600 text-xs">$999.99</span>
+                </div>
+
+                <button class="mr-2">Add to cart<i class="fa fa-shopping-cart text-primary ml-2"></i></button>
+
+              
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="bg-white-600 rounded-lg shadow ">
+            <div class="relative">
+              <img src="./asset/images/products/ktm.jpg" alt="" class="rounded-t-lg w-full h-48 object-cover">
+
+              <span class="absolute top-2 left-2 bg-red-600 text-white rounded-full text-xs px-1 py-2">-25%</span>
+            </div>
+            
+
+            <div class="p-4 bg-white" >
+              <h3 class="font-semibold ">Duke 390</h3>
+              <div class="text-yellow-500 text-xs py-2" >
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                <span class="text-gray-400">(930)</span>
+                
+              </div>
+
+              <div class="flex justify-between ">
+                <div>
+                  <span class="text-primary font-bold mr-1 text-lg">$899.99</span>
+                 <span class="line-through text-gray-600 text-xs">$999.99</span>
+                </div>
+
+                <button class="mr-2">Add to cart<i class="fa fa-shopping-cart text-primary ml-2"></i></button>
+
+              
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="bg-white-600 rounded-lg shadow ">
+            <div class="relative">
+              <img src="./asset/images/products/ktm.jpg" alt="" class="rounded-t-lg w-full h-48 object-cover">
+
+              <span class="absolute top-2 left-2 bg-red-600 text-white rounded-full text-xs px-1 py-2">-25%</span>
+            </div>
+            
+
+            <div class="p-4 bg-white" >
+              <h3 class="font-semibold ">Duke 390</h3>
+              <div class="text-yellow-500 text-xs py-2" >
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                <span class="text-gray-400">(930)</span>
+                
+              </div>
+
+              <div class="flex justify-between ">
+                <div>
+                  <span class="text-primary font-bold mr-1 text-lg">$899.99</span>
+                 <span class="line-through text-gray-600 text-xs">$999.99</span>
+                </div>
+
+                <button class="mr-2">Add to cart<i class="fa fa-shopping-cart text-primary ml-2"></i></button>
+
+              
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="bg-white-600 rounded-lg shadow ">
+            <div class="relative">
+              <img src="./asset/images/products/ktm.jpg" alt="" class="rounded-t-lg w-full h-48 object-cover">
+
+              <span class="absolute top-2 left-2 bg-red-600 text-white rounded-full text-xs px-1 py-2">-25%</span>
+            </div>
+            
+
+            <div class="p-4 bg-white" >
+              <h3 class="font-semibold ">Duke 390</h3>
+              <div class="text-yellow-500 text-xs py-2" >
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                <span class="text-gray-400">(930)</span>
+                
+              </div>
+
+              <div class="flex justify-between ">
+                <div>
+                  <span class="text-primary font-bold mr-1 text-lg">$899.99</span>
+                 <span class="line-through text-gray-600 text-xs">$999.99</span>
+                </div>
+
+                <button class="mr-2">Add to cart<i class="fa fa-shopping-cart text-primary ml-2"></i></button>
+
+              
+              </div>
+            </div>
+
+
+          </div>
+
+
+          </div>
+
+          
+        </div>
+
+        
+      </section>
+
+        
+      
+      <!-- popular product section -->
+       <section id="popular-product" class="py-16  mx-auto px-4 ">
+        <div class="container mx-auto px-4 ">
+          <div>
+            <h2 class="font-bold text-3xl text-center mb-3 md:text-4xl lg:text-5xl">Popular product</h2>
+           <p class="font-semibold text-slate-600 text-center lg:text-xl mb-8">Check out the latest products which are available in the market.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4">
+            <div class="bg-white-600 rounded-lg shadow ">
+            <div class="relative">
+              <img src="./asset/images/products/ford.jpg" alt="" class="rounded-t-lg w-full h-48 object-cover">
+
+              <span class="absolute top-3 right-3 bg-red-600 text-white rounded-full text-xs px-2 py-2">Most Selling</span>
+            </div>
+            
+
+            <div class="p-4 bg-white" >
+              <h3 class="font-bold shadow">Ford Everest (Old)</h3>
+
+              <p class="font-semibold text-gray-500">One of the most selling car by ford which is popular among the people in the hilly and himalayan region</p>
+                
+              </div>
+
+              <div class="flex justify-between ">
+                <div>
+                  <span class="text-primary font-bold mr-1 text-lg">$29,999.99</span>
+                 
+                </div>
+
+                <div class="rounded-lg text-white bg-primary py-2 px-2">
+                  <button class="mr-2">Add to cart<i class="fa fa-shopping-cart ml-2"></i></button>
+                </div>
+
+              
+              </div>
+            </div>
+            <div class="bg-white-600 rounded-lg shadow ">
+            <div class="relative">
+              <img src="./asset/images/products/ford.jpg" alt="" class="rounded-t-lg w-full h-48 object-cover">
+
+              <span class="absolute top-3 right-3 bg-red-600 text-white rounded-full text-xs px-2 py-2">Most Selling</span>
+            </div>
+            
+
+            <div class="p-4 bg-white" >
+              <h3 class="font-bold shadow">Ford Everest (Old)</h3>
+
+              <p class="font-semibold text-gray-500">One of the most selling car by ford which is popular among the people in the hilly and himalayan region</p>
+                
+              </div>
+
+              <div class="flex justify-between ">
+                <div>
+                  <span class="text-primary font-bold mr-1 text-lg">$29,999.99</span>
+                 
+                </div>
+
+                <div class="rounded-lg text-white bg-primary py-2 px-2 mb-2">
+                  <button class="mr-2">Add to cart<i class="fa fa-shopping-cart ml-2"></i></button>
+                </div>
+
+              
+              </div>
+            </div>
+            <div class="bg-white-600 rounded-lg shadow ">
+            <div class="relative">
+              <img src="./asset/images/products/ford.jpg" alt="" class="rounded-t-lg w-full h-48 object-cover">
+
+              <span class="absolute top-3 right-3 bg-red-600 text-white rounded-full text-xs px-2 py-2">Most Selling</span>
+            </div>
+            
+
+            <div class="p-4 bg-white" >
+              <h3 class="font-bold shadow">Ford Everest (Old)</h3>
+
+              <p class="font-semibold text-gray-500">One of the most selling car by ford which is popular among the people in the hilly and himalayan region</p>
+                
+              </div>
+
+              <div class="flex justify-between ">
+                <div>
+                  <span class="text-primary font-bold mr-1 text-lg">$29,999.99</span>
+                 
+                </div>
+
+                <div class="rounded-lg text-white bg-primary py-2 px-2 mb-2">
+                  <button class="mr-2">Add to cart<i class="fa fa-shopping-cart ml-2"></i></button>
+                </div>
+
+              
+              </div>
+            </div>
+            <div class="bg-white-600 rounded-lg shadow ">
+            <div class="relative">
+              <img src="./asset/images/products/r15.jpg" alt="" class="rounded-t-lg w-full h-48 object-cover">
+
+              <span class="absolute top-3 right-3 bg-red-600 text-white rounded-full text-xs px-2 py-2">Most Selling</span>
+            </div>
+            
+
+            <div class="p-4 bg-white" >
+              <h3 class="font-bold shadow">R15 Yamaha</h3>
+
+              <p class="font-semibold text-gray-500">One of the most selling bike.</p>
+                
+              </div>
+
+              <div class="flex justify-between mb-2 ">
+                <div class="">
+                  <span class="text-primary font-bold mr-1 text-lg">$12,999.99</span>
+                 
+                </div>
+
+                <div class="rounded-lg text-white bg-primary py-2 px-2 mb-2 ">
+                  <button class="mr-2">Add to cart<i class="fa fa-shopping-cart ml-2"></i></button>
+                </div>
+
+              
+              </div>
+            </div>
+            
+            
+            
+
+
+          </div>
+
+          
+
+          </div>
+
+        </div>
+
+          
+      </section>
+
+
+      <!-- Categories section -->
+       <section id="categories"  class="py-16 bg-gray-300">
+        <div class="container mx-auto px-4">
+
+          <div>
+            <h2 class="font-bold text-3xl text-center mb-3 md:text-4xl lg:text-5xl">List of the catagory</h2>
+           <p class="font-semibold text-slate-600 text-center lg:text-xl mb-8">Browse for your required list of products.</p>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-4 justify-between px-4  ">
+            <div class=" bg-primary/80 py-4 px-4 text-center w-20 rounded-full ">
+              <span><i class="fa fa-laptop"></i></span>
+              <h2>Laptop</h2>
+
+            </div>
+
+            <div class="bg-primary/80 py-4 px-4 text-center w-20 rounded-full">
+              <i class="fa fa-car"></i>
+              <h2>Car</h2>
+
+            </div>
+
+            <div class=" bg-primary/80 py-4 px-4 text-center w-20 rounded-full">
+              <i class="fa fa-motorcycle"></i>
+              <h2>Bikes</h2>
+
+            </div>
+
+            <div class=" bg-primary/80 py-4 px-4 text-center w-20 rounded-full">
+              <i class="fa fa-mobile"></i>
+              <h2>Mobile</h2>
+
+            </div>
+
+            <div class=" bg-primary/80 py-4 px-4 text-center w-20 rounded-full">
+              <i class="fa fa-truck"></i>
+              <h2>Truck</h2>
+
+            </div>
+
+            <div class=" bg-primary/80 py-4 px-4 text-center w-20 rounded-full">
+              <i class="fa fa-house"></i>
+              <h2>house</h2>
+
+            </div>
+
+            <div class=" bg-primary/80 py-4 px-4 text-center w-20 rounded-full">
+              <i class="fa fa-book"></i>
+              <h2>Bikes</h2>
+
+            </div>
+            
+            
+
+          </div>
+          
+        </div>
+       </section>
+
+
+       <!-- testimonial section -->
+
+       <section id="testimonial" class="py-16 bg-white-500">
+        <div class="container mx-auto px-4">
+          <div class="mb-10">
+            <h2 class="font-bold text-3xl text-center mb-3 md:text-4xl lg:text-5xl">What our customer say </h2>
+           <p class="font-semibold text-slate-600 text-center lg:text-xl mb-8">Hear from our satisfied customers what they have to say about us.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-4 gap-y-5 gap-x-4">
+            <div class="bg-slate-100 rounded-lg shadow-md hover:shadow-lg transition p-6">
+            <p class="text-sm font-semibold text-slate-600 text-justify">"To generate random paragraphs in Microsoft Word, you can use the =RAND() function. Typing =RAND() and pressing Enter will insert a default amount of text, typically three paragraphs with three sentences each. You can customize the number of paragraphs and sentences by specifying them within the parentheses, for example, =RAND(2,5) will generate two paragraphs with five sentences each. Alternatively, you can use the =LOREM() function to insert pseudo-Latin placeholder text."</p>
+
+<div class="text-yellow-500 text-sm py-3 px-2">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star-half"></i>
+
+</div>
+<div class="flex gap-5">
+  <img src="asset/images/products/samirpp.jpg" alt="" class="h-12 obkect-cover rounded-xl border-2">
+  <div>
+    <h2 class="font-bold text-xl">Micheal Jackson</h2>
+  <p>satisfied customer</p>
+  </div>
+</div>
+          </div>
+          <div class="bg-slate-100 rounded-lg shadow-md hover:shadow-lg transition p-6">
+            <p class="text-sm font-semibold text-slate-600 text-justify">"To generate random paragraphs in Microsoft Word, you can use the =RAND() function. Typing =RAND() and pressing Enter will insert a default amount of text, typically three paragraphs with three sentences each. You can customize the number of paragraphs and sentences by specifying them within the parentheses, for example, =RAND(2,5) will generate two paragraphs with five sentences each. Alternatively, you can use the =LOREM() function to insert pseudo-Latin placeholder text."</p>
+
+<div class="text-yellow-500 text-sm py-3 px-2">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star-half"></i>
+
+</div>
+<div class="flex gap-5">
+  <img src="asset/images/products/samirpp.jpg" alt="" class="h-12 obkect-cover rounded-xl border-2">
+  <div>
+    <h2 class="font-bold text-xl">Micheal Jackson</h2>
+  <p>satisfied customer</p>
+  </div>
+</div>
+          </div>
+          <div class="bg-slate-100 rounded-lg shadow-md hover:shadow-lg transition p-6">
+            <p class="text-sm font-semibold text-slate-600 text-justify">"To generate random paragraphs in Microsoft Word, you can use the =RAND() function. Typing =RAND() and pressing Enter will insert a default amount of text, typically three paragraphs with three sentences each. You can customize the number of paragraphs and sentences by specifying them within the parentheses, for example, =RAND(2,5) will generate two paragraphs with five sentences each. Alternatively, you can use the =LOREM() function to insert pseudo-Latin placeholder text."</p>
+
+<div class="text-yellow-500 text-sm py-3 px-2">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star-half"></i>
+
+</div>
+<div class="flex gap-5">
+  <img src="asset/images/products/samirpp.jpg" alt="" class="h-12 obkect-cover rounded-xl border-2">
+  <div>
+    <h2 class="font-bold text-xl">Micheal Jackson</h2>
+  <p>satisfied customer</p>
+  </div>
+</div>
+          </div>
+          <div class="bg-slate-100 rounded-lg shadow-md hover:shadow-lg transition p-6">
+            <p class="text-sm font-semibold text-slate-600 text-justify">"To generate random paragraphs in Microsoft Word, you can use the =RAND() function. Typing =RAND() and pressing Enter will insert a default amount of text, typically three paragraphs with three sentences each. You can customize the number of paragraphs and sentences by specifying them within the parentheses, for example, =RAND(2,5) will generate two paragraphs with five sentences each. Alternatively, you can use the =LOREM() function to insert pseudo-Latin placeholder text."</p>
+
+<div class="text-yellow-500 text-sm py-3 px-2">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star-half"></i>
+
+</div>
+<div class="flex gap-5">
+  <img src="asset/images/products/samirpp.jpg" alt="" class="h-12 obkect-cover rounded-xl border-2">
+  <div>
+    <h2 class="font-bold text-xl">Micheal Jackson</h2>
+  <p>satisfied customer</p>
+  </div>
+</div>
+          </div>
+          <div class="bg-slate-100 rounded-lg shadow-md hover:shadow-lg transition p-6">
+            <p class="text-sm font-semibold text-slate-600 text-justify">"To generate random paragraphs in Microsoft Word, you can use the =RAND() function. Typing =RAND() and pressing Enter will insert a default amount of text, typically three paragraphs with three sentences each. You can customize the number of paragraphs and sentences by specifying them within the parentheses, for example, =RAND(2,5) will generate two paragraphs with five sentences each. Alternatively, you can use the =LOREM() function to insert pseudo-Latin placeholder text."</p>
+
+<div class="text-yellow-500 text-sm py-3 px-2">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star-half"></i>
+
+</div>
+<div class="flex gap-5">
+  <img src="asset/images/products/samirpp.jpg" alt="" class="h-12 obkect-cover rounded-xl border-2">
+  <div>
+    <h2 class="font-bold text-xl">Micheal Jackson</h2>
+  <p>satisfied customer</p>
+  </div>
+</div>
+          </div>
+
+          </div>
+
+          
+        </div>
+       </section>
+
+       
+
+       <!-- footer section -->
+
+       <section id="footer" class="py-16 bg-orange-400">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 ">
+            <div class="text-gray-600 text-center  mt-2">
+              <h1 class="text-center  font-bold text-2xl">Contact</h1>
+
+             <div class="">
+              <div class="gap-2 text-sm justify-center">
+              <i class="fa-solid fa-phone rounded-full border-2 mb-2 p-0.5"></i>
+             <span>9848884433</span>
+             
+             <div class="gap-2 text-sm">
+              <i class="fa-solid fa-location-dot rounded-full border-2 mb-2 py-0.5  px-1"></i>
+              <span>Lalitpur-4, Balkumari</span>
+
+              <div class="gap-2 text-sm">
+                <i class="fa-solid fa-envelope rounded-full border-2 mb-2 py-0.5  px-0.5"></i>
+               <span>dreamshop@gmail.com</span>
+              
+             
+            </div>
+             </div>
+
+            </div>
+            
+            </div>
+
+          </div>
+
+          <div class="navigate text-gray-600 text-center items-center mt-2">
+            <h1 class="text-center  font-bold text-2xl">Navigate</h1>
+                <div>
+                  <h2>Featured product</h2>
+                  <h2>Popular product</h2>
+
+                <h2>Categories</h2>
+                </div>
+
+
+        </div>
+
+        <div class="discover text-gray-600 text-center items-center mt-2">
+            <h1 class="text-center  font-bold text-2xl">Discover</h1>
+                <div>
+                  <h2>Latest Technology</h2>
+                  <h2>New Arrivals</h2>
+                </div>
+
+
+        </div>
+
+        <div class="social media text-gray-600 text-center items-center mt-2">
+            <h1 class="text-center  font-bold text-2xl">Social Media</h1>
+                <div>
+                  <i class="fa-brands fa-facebook rounded-full border-2 mb-2 py-0.5  px-0.5"></i>
+               <span>Facebook</span>
+                  
+                </div>
+
+                <div>
+                  <i class="fa-brands fa-instagram rounded-full border-2 mb-2 py-0.5  px-0.5"></i>
+               <span>Instagram</span>
+                  
+                </div>
+
+                <div>
+                  <i class="fa-brands fa-whatsapp rounded-full border-2 mb-2 py-0.5  px-0.5"></i>
+               <span>Whatsapp</span>
+                  
+                </div>
+
+                <div>
+                  <i class="fa-brands fa-tiktok rounded-full border-2 mb-2 py-0.5  px-0.5"></i>
+               <span>Tik Tok</span>
+                  
+                </div>
+
+
+        </div>
+
+       </section>
+    </main>
+  </body>
+</html>
